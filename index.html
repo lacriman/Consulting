@@ -18,42 +18,44 @@
    <div class="wrapper">
       <header class="header">
          <div class="header-line">
-            <div class="left-side">
-               <div class="logo">
-                  <a href="#" class="header__logo">Consulting</a>
-               </div>
+            <button class="header__hamburger" aria-controls="primary-navigation" aria-expanded="false">
+               <svg fill="var(--button-color)" class="hamburger" viewBox="0 0 100 100" width="120">
+                  <rect class="line top" width="45" height="2" x="27" y="40" rx="2">
+                  </rect>
+                  <rect class="line middle" width="45" height="2" x="27" y="50" rx="2">
+                  </rect>
+                  <rect class="line bottom" width="45" height="2" x="27" y="60" rx="2">
+                  </rect>
+               </svg>
+            </button>
 
-               <div class="header__body">
-                  <nav class="header__menu menu">
-                     <ul class="menu__list">
-                        <li class="menu__item">
-                           <a href="#" class="menu__link">ABOUT</a>
-                        </li>
-                        <li class="menu__item">
-                           <a href="#" class="menu__link">OUR SERVICES</a>
-                        </li>
-                        <li class="menu__item">
-                           <a href="#" class="menu__link">JOB OPENINGS</a>
-                        </li>
-                     </ul>
-                  </nav>
-               </div>
+            <div class="logo">
+               <a href="#" class="header__logo">Consulting</a>
             </div>
 
-            <div class="header__settings">
-               <div class="language-switcher">
-                  <div class="language-label"></div>
-                  <div class="selected-language">RU</div>
-                  <div class="language-menu" id="languageMenu">
-                     <div class="language-option">RU</div>
-                     <div class="language-option">EN</div>
-                     <div class="language-option">UA</div>
-                  </div>
-               </div>
-
-               <button class="header__solid-button _icon-send" type="button">Contact us</button>
+            <div class="header__button">
+               <button class="button-adaptive">
+                  <img src="assets/img/button.svg" alt="">
+               </button>
             </div>
-
+            <div class="header__body">
+               <nav class="header__menu menu">
+                  <ul class="menu__list">
+                     <li class="menu__item">
+                        <a href="#" class="menu__link">ABOUT</a>
+                     </li>
+                     <li class="menu__item">
+                        <a href="#" class="menu__link">OUR SERVICES</a>
+                     </li>
+                     <li class="menu__item">
+                        <a href="#" class="menu__link">JOB OPENINGS</a>
+                     </li>
+                  </ul>
+               </nav>
+               <div class="header__button">
+                  <button class="header__solid-button _icon-send" type="button">Contact us</button>
+               </div>
+            </div>
 
          </div>
       </header>
@@ -61,7 +63,9 @@
          <section class="page__main main-section">
             <div class="main-section__container">
                <div class="main-section__content">
-                  <h1 class="main-section__title">Developing IT solutions to scale up your business</h1>
+                  <h1 class="main-section__title">Приведіть Ваш Бізнес до Нових
+                     Висот з Нашою Методологією
+                     Маркетингової Ефективності</h1>
                   <button class="main__button-circle-white">Estimate<br>project</button>
                </div>
             </div>
@@ -76,36 +80,41 @@
                   <div class="goals__flex-container">
                      <div class="goals__item">
                         <div class="goals__item_number">01</div>
-                        <div class="goals__item_title">Title of the first goal</div>
-                        <div class="goals__item_text">A small text describing one of the goals in two lines.</div>
+                        <div class="goals__item_title">Максимізація Маркетингу</div>
+                        <div class="goals__item_text">Ми забезпечимо ефективні маркетингові рішення, що приведуть до
+                           зростання продажів.
+                        </div>
                      </div>
                      <div class="goals__item">
                         <div class="goals__item_number">02</div>
-                        <div class="goals__item_title">Title of the second goal</div>
-                        <div class="goals__item_text">A small text describing one of the goals in two lines.</div>
+                        <div class="goals__item_title">Стратегічна Візія</div>
+                        <div class="goals__item_text">Спільно сформулюємо чітку стратегічну візію для довгострокового
+                           розвитку.
+                        </div>
                      </div>
-                     <div class="goals__photo">
+                     <div class="goals__photo" id="phone">
                         <img src="/assets/img/phone.jpg" alt="phone">
                      </div>
 
-                     <div class="goals__photo">
+                     <div class="goals__photo" id="pc">
                         <img src="/assets/img/pc.jpg" alt="pc">
                      </div>
                      <div class="goals__item">
                         <div class="goals__item_number">03</div>
-                        <div class="goals__item_title">Title of the third goal</div>
-                        <div class="goals__item_text">A small text describing one of the goals in two lines. A small
-                           text describing one of the goals in two lines.</div>
+                        <div class="goals__item_title">Побудова Внутрішніх Компетенцій</div>
+                        <div class="goals__item_text">Наш консалтинг спрямований на розвиток вашої команди. Ми передамо
+                           знання та навички, які дозволять вашій команді самостійно вирішувати маркетингові виклики.
+                        </div>
                      </div>
 
                      <div class="goals__item">
                         <div class="goals__item_number">04</div>
-                        <div class="goals__item_title">Title of the fourth goal</div>
-                        <div class="goals__item_text">A small text describing one of the goals in two lines. A small
-                           text
-                           describing one of the goals in two lines.</div>
+                        <div class="goals__item_title">Забезпечення Стабільного Зростання</div>
+                        <div class="goals__item_text">Наша методологія створює основу для сталого росту вашого бізнесу.
+                           Ми допоможемо вам розблокувати потенціал та забезпечити стабільність в умовах змінного
+                           ринкового середовища.</div>
                      </div>
-                     <div class="goals__photo">
+                     <div class="goals__photo" id="writing">
                         <img src="/assets/img/writing.jpg" alt="writing">
                      </div>
                   </div>
@@ -114,10 +123,11 @@
          </section>
          <section class="page__why why">
             <div class="why__container">
-               <h2 class="why__title title">Why choose us?</h2>
+               <h2 class="why__title title">Чому Ми?</h2>
                <div class="why__text">
-                  Fill the gaps in your competencies by setting up a remote IT team. We will find the best experts for
-                  you and arrange everything around it. You will get a perfect match both in skills and cultural fit.
+                  Обираючи наш консалтинг, ви отримуєте не лише консультації, а повноцінне партнерство у розвитку вашого
+                  бізнесу. Наша унікальна методологія, спираючись на успішний досвід і сучасні інструменти, гарантує
+                  ефективність стратегій, які залишаться з вами на завжди, забезпечуючи стале зростання.
                </div>
 
                <div class="tabs-container">
@@ -226,7 +236,7 @@
                </div>
             </div>
          </section>
-         <section class="page__tech tech">
+         <!-- <section class="page__tech tech">
             <div class="tech__container">
                <div class="tech__content">
                   <h2 class="tech__title title">Used technologies</h2>
@@ -247,7 +257,7 @@
                   </div>
                </div>
             </div>
-         </section>
+         </section> -->
          <section class="page__industries industries">
             <div class="industries__container">
                <div class="industries__content">
@@ -320,28 +330,24 @@
 
                   <div class="form-container">
                      <div class="form-field">
-                        <label for="name">Enter your Full Name</label>
-                        <input type="text" id="name" name="name" required>
+                        <input type="text" id="name" name="name" placeholder="Enter your Full Name" required>
                      </div>
                      <div class="form-field">
-                        <label for="text">Describe your project</label>
-                        <textarea id="text" name="text" rows="1" required></textarea>
+                        <input id="text" name="describe" rows="1" placeholder="Describe your project" required></input>
                      </div>
                      <div class="form-field">
-                        <label for="email">Enter your Email</label>
-                        <input type="email" id="email" name="email" required>
+                        <input type="email" id="email" name="email" placeholder="Enter your Email" required>
                      </div>
                      <div class="form-field">
-                        <label for="upload">Upload file (max file size is 30 MB)<span class="_icon-add"></span></label>
-                        <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
-                        <input type="" id="upload" name="upload" accept=".jpg, .png, .pdf">
+                        <input type="" id="upload" name="upload" class=" _icon-add"
+                           placeholder="Upload file (max file size is 30 MB)" accept=".jpg, .png, .pdf">
                      </div>
                      <div class="form-field">
-                        <label for="tel">Enter your Phone Number</label>
-                        <input type="tel" id="tel" name="tel" required>
+                        <input type="tel" id="tel" name="tel" placeholder="Enter your Phone Number" required>
                      </div>
+                     <button class="form__submit _icon-send" type="submit">Submit</button>
+
                   </div>
-                  <button class="form__submit _icon-send" type="submit">Submit</button>
                </div>
             </div>
          </section>
@@ -362,7 +368,7 @@
                      </div>
                      <button class="footer__solid-button _icon-send">Contact us</button>
                   </div>
-   
+
                   <div class="footer__extra">
                      <div class="footer__address">
                         <div class="footer__title">Our offices</div>
@@ -377,7 +383,7 @@
                            <div class="address__address">44 Karl Liebknecht Street, floor 5, office 522</div>
                         </div>
                      </div>
-      
+
                      <div class="footer__services">
                         <div class="footer__title">services</div>
                         <a href="#" class="services__link">Technical Support</a>
@@ -389,7 +395,7 @@
                      </div>
                   </div>
                </div>
-   
+
             </div>
             <div class="footer__under">
                <div class="under__title">Development by IT Support Group.</div>

@@ -12,30 +12,26 @@ function showTabContent(index) {
 showTabContent(0); // Show the first tab content by default
 
 // --------------------------------------------------------------------------------------------
+const burgerMenu = document.querySelector('.header__hamburger');
+const menu = document.querySelector('.menu__list');
 
-document.addEventListener('DOMContentLoaded', function() {
-  const languageSwitcher = document.querySelector('.language-switcher');
-  const languageMenu = document.getElementById('languageMenu');
-
-  languageSwitcher.addEventListener('click', function(event) {
-    languageMenu.style.display = languageMenu.style.display === 'block' ? 'none' : 'block';
-    event.stopPropagation();
-  });
-
-  const languageOptions = document.querySelectorAll('.language-option');
-  languageOptions.forEach(function(option) {
-    option.addEventListener('click', function(event) {
-      const selectedLanguage = document.querySelector('.selected-language');
-      selectedLanguage.textContent = option.textContent;
-      languageMenu.style.display = 'none';
-      event.stopPropagation();
-      // Здесь можно добавить логику для изменения языка 
-    });
-  });
-
-  document.addEventListener('click', function() {
-    languageMenu.style.display = 'none';
-  });
+burgerMenu.addEventListener('click', () => {
+  menu.classList.toggle('active');
 });
 
-// --------------------------------------------------------------------------------------------
+
+const buttons = document.querySelectorAll("button");
+
+buttons.forEach((button) => {
+  button.addEventListener("click", () => {
+    const currentState = button.getAttribute("data-state");
+
+    if (!currentState || currentState === "closed") {
+      button.setAttribute("data-state", "opened");
+      button.setAttribute("aria-expanded", "true");
+    } else {
+      button.setAttribute("data-state", "closed");
+      button.setAttribute("aria-expanded", "false");
+    }
+  });
+});
