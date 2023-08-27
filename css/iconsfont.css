@@ -37,7 +37,7 @@
 ._icon-download::after {
   content: "\e902";
   color: #fff;
-  margin-left: .9375rem;
+  margin-left: .9375rem; 
 }
 ._icon-add::after {
   padding-left: .9375rem;
