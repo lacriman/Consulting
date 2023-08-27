@@ -1075,15 +1075,15 @@ input[type="file"] {
 	}
 
 	#phone {
-		content: url(/assets/img/adaptive/phone.jpg);
+		content: url(assets/img/adaptive/phone.jpg);
 	}
 
 	#pc {
-		content: url(/assets/img/adaptive/pc.jpg);
+		content: url(assets/img/adaptive/pc.jpg);
 	}
 
 	#writing {
-		content: url(/assets/img/adaptive/writing.jpg);
+		content: url(assets/img/adaptive/writing.jpg);
 	}
   /* --------Goals-------- */
   .goals__title {
