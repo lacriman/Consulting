@@ -9,7 +9,7 @@ function showTabContent(index) {
     tabContent.forEach(content => content.classList.remove('active'));
     tabContent[index].classList.add('active');
 
-    // Move the slider   to the active tab
+    // Move the slider to the active tab
     let activeTab = tabs[index];
     let sliderOffset = activeTab.offsetTop - activeTab.parentElement.offsetTop;
     slider.style.transform = `translateY(${sliderOffset}px)`;
