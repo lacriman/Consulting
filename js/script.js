@@ -24,7 +24,7 @@ tabs.forEach((tab, index) => {
 showTabContent(0); // Show the first tab content by default
 
 
-// --------------------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------------
 const burgerMenu = document.querySelector('.header__hamburger');
 const menu = document.querySelector('.menu__list');
 
